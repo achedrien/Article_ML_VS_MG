@@ -1,0 +1,16 @@
+user                = "Guest"
+
+configName          = "Poisson_reparted"
+
+basePathPrefix      = "./poisson_correct_size/"
+
+l4file              = "2D_FV_Poisson_fromL4.exa4"
+
+debugL1File         = "../Debug/$configName$_debug.exa1"
+debugL2File         = "../Debug/$configName$_debug.exa2"
+debugL3File         = "../Debug/$configName$_debug.exa3"
+debugL4File         = "../Debug/$configName$_debug.exa4"
+
+htmlLogFile         = "../Debug/$configName$_log.html"
+outputPath          = "../generated/depth_14/$configName$/"
+
