@@ -2,9 +2,9 @@ user                = "Guest"
 
 configName          = "Poisson_reparted"
 
-basePathPrefix      = "./poisson_correct_size/"
+basePathPrefix      = "./"
 
-l4file              = "2D_FV_Poisson_fromL4.exa4"
+l4file              = "2D_FD_Poisson_fromL4.exa4"
 
 debugL1File         = "../Debug/$configName$_debug.exa1"
 debugL2File         = "../Debug/$configName$_debug.exa2"
