@@ -1,0 +1,20 @@
+dimensionality                 = 2
+
+minLevel                       = 0
+maxLevel                       = 13
+discr_type                     = "FiniteDifferences"
+
+domain_fragmentLength_x         = 1
+domain_fragmentLength_y         = 1
+
+import '../lib/domain_onePatch.knowledge'
+import '../lib/parallelization_serial.knowledge'
+// import '../lib/parallelization_pureOmp.knowledge'
+
+cuda_enabled                   = true
+cuda_blockSize_x = 16
+cuda_blockSize_y = 16
+cuda_blockSize_z = 1
+cuda_preferredExecution        = 'Condition'
+cuda_executionCondition        = 'execOnCpu'
+
