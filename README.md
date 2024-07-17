@@ -39,7 +39,7 @@ for depth in [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]:
                                 file.write('outputPath          = "../generated/depth_' + str(depth) + '/$configName$' + '/"\n')
                         else:
                                 file.write(line)
-        os.system("java -cp ../../ExaStencils/Compiler/Compiler.jar Main 2D_FD_Poisson_from_L4/2D_FD_Poisson_from_L4.settings 2D_FD_Poisson_from_L4/2D_FD_Poisson_from_L4.knowledge lib/biggpu.platform")
+        os.system("java -cp ../Compiler/Compiler.jar Main 2D_FD_Poisson_from_L4/2D_FD_Poisson_from_L4.settings 2D_FD_Poisson_from_L4/2D_FD_Poisson_from_L4.knowledge lib/linux.platform")
 ```
 
 Then compile and run the generated code on GPU be careful with the arch flag in cuda flag, it could be incompatible with your actual GPU
